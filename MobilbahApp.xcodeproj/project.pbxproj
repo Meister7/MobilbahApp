@@ -1,0 +1,604 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		69CB9A9D2D1AEA5A0093300B /* MobilbahAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CB9A9C2D1AEA5A0093300B /* MobilbahAppApp.swift */; };
+		69CB9A9F2D1AEA5A0093300B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CB9A9E2D1AEA5A0093300B /* ContentView.swift */; };
+		69CB9AA12D1AEA5B0093300B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69CB9AA02D1AEA5B0093300B /* Assets.xcassets */; };
+		69CB9AA42D1AEA5B0093300B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69CB9AA32D1AEA5B0093300B /* Preview Assets.xcassets */; };
+		69CB9AAE2D1AEA5B0093300B /* MobilbahAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CB9AAD2D1AEA5B0093300B /* MobilbahAppTests.swift */; };
+		69CB9AB82D1AEA5B0093300B /* MobilbahAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CB9AB72D1AEA5B0093300B /* MobilbahAppUITests.swift */; };
+		69CB9ABA2D1AEA5B0093300B /* MobilbahAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CB9AB92D1AEA5B0093300B /* MobilbahAppUITestsLaunchTests.swift */; };
+		69CB9AC72D1AEAAE0093300B /* CustomWebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CB9AC62D1AEAAE0093300B /* CustomWebView.swift */; };
+		69CB9AC92D1AEAD80093300B /* OrientationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CB9AC82D1AEAD80093300B /* OrientationManager.swift */; };
+		69CB9ACB2D1AEAF60093300B /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CB9ACA2D1AEAF60093300B /* WebView.swift */; };
+		69CB9ACD2D1AEB2B0093300B /* backgroundMusic.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 69CB9ACC2D1AEB2B0093300B /* backgroundMusic.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		69CB9AAA2D1AEA5B0093300B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 69CB9A912D1AEA5A0093300B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 69CB9A982D1AEA5A0093300B;
+			remoteInfo = MobilbahApp;
+		};
+		69CB9AB42D1AEA5B0093300B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 69CB9A912D1AEA5A0093300B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 69CB9A982D1AEA5A0093300B;
+			remoteInfo = MobilbahApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		69CB9A992D1AEA5A0093300B /* MobilbahApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobilbahApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		69CB9A9C2D1AEA5A0093300B /* MobilbahAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobilbahAppApp.swift; sourceTree = "<group>"; };
+		69CB9A9E2D1AEA5A0093300B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		69CB9AA02D1AEA5B0093300B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		69CB9AA32D1AEA5B0093300B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		69CB9AA92D1AEA5B0093300B /* MobilbahAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobilbahAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		69CB9AAD2D1AEA5B0093300B /* MobilbahAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobilbahAppTests.swift; sourceTree = "<group>"; };
+		69CB9AB32D1AEA5B0093300B /* MobilbahAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobilbahAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		69CB9AB72D1AEA5B0093300B /* MobilbahAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobilbahAppUITests.swift; sourceTree = "<group>"; };
+		69CB9AB92D1AEA5B0093300B /* MobilbahAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobilbahAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		69CB9AC62D1AEAAE0093300B /* CustomWebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomWebView.swift; sourceTree = "<group>"; };
+		69CB9AC82D1AEAD80093300B /* OrientationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrientationManager.swift; sourceTree = "<group>"; };
+		69CB9ACA2D1AEAF60093300B /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		69CB9ACC2D1AEB2B0093300B /* backgroundMusic.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = backgroundMusic.mp3; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		69CB9A962D1AEA5A0093300B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69CB9AA62D1AEA5B0093300B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69CB9AB02D1AEA5B0093300B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		69CB9A902D1AEA5A0093300B = {
+			isa = PBXGroup;
+			children = (
+				69CB9A9B2D1AEA5A0093300B /* MobilbahApp */,
+				69CB9AAC2D1AEA5B0093300B /* MobilbahAppTests */,
+				69CB9AB62D1AEA5B0093300B /* MobilbahAppUITests */,
+				69CB9A9A2D1AEA5A0093300B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		69CB9A9A2D1AEA5A0093300B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				69CB9A992D1AEA5A0093300B /* MobilbahApp.app */,
+				69CB9AA92D1AEA5B0093300B /* MobilbahAppTests.xctest */,
+				69CB9AB32D1AEA5B0093300B /* MobilbahAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		69CB9A9B2D1AEA5A0093300B /* MobilbahApp */ = {
+			isa = PBXGroup;
+			children = (
+				69CB9ACC2D1AEB2B0093300B /* backgroundMusic.mp3 */,
+				69CB9A9C2D1AEA5A0093300B /* MobilbahAppApp.swift */,
+				69CB9A9E2D1AEA5A0093300B /* ContentView.swift */,
+				69CB9AC62D1AEAAE0093300B /* CustomWebView.swift */,
+				69CB9AC82D1AEAD80093300B /* OrientationManager.swift */,
+				69CB9ACA2D1AEAF60093300B /* WebView.swift */,
+				69CB9AA02D1AEA5B0093300B /* Assets.xcassets */,
+				69CB9AA22D1AEA5B0093300B /* Preview Content */,
+			);
+			path = MobilbahApp;
+			sourceTree = "<group>";
+		};
+		69CB9AA22D1AEA5B0093300B /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				69CB9AA32D1AEA5B0093300B /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		69CB9AAC2D1AEA5B0093300B /* MobilbahAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				69CB9AAD2D1AEA5B0093300B /* MobilbahAppTests.swift */,
+			);
+			path = MobilbahAppTests;
+			sourceTree = "<group>";
+		};
+		69CB9AB62D1AEA5B0093300B /* MobilbahAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				69CB9AB72D1AEA5B0093300B /* MobilbahAppUITests.swift */,
+				69CB9AB92D1AEA5B0093300B /* MobilbahAppUITestsLaunchTests.swift */,
+			);
+			path = MobilbahAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		69CB9A982D1AEA5A0093300B /* MobilbahApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69CB9ABD2D1AEA5B0093300B /* Build configuration list for PBXNativeTarget "MobilbahApp" */;
+			buildPhases = (
+				69CB9A952D1AEA5A0093300B /* Sources */,
+				69CB9A962D1AEA5A0093300B /* Frameworks */,
+				69CB9A972D1AEA5A0093300B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MobilbahApp;
+			productName = MobilbahApp;
+			productReference = 69CB9A992D1AEA5A0093300B /* MobilbahApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		69CB9AA82D1AEA5B0093300B /* MobilbahAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69CB9AC02D1AEA5B0093300B /* Build configuration list for PBXNativeTarget "MobilbahAppTests" */;
+			buildPhases = (
+				69CB9AA52D1AEA5B0093300B /* Sources */,
+				69CB9AA62D1AEA5B0093300B /* Frameworks */,
+				69CB9AA72D1AEA5B0093300B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				69CB9AAB2D1AEA5B0093300B /* PBXTargetDependency */,
+			);
+			name = MobilbahAppTests;
+			productName = MobilbahAppTests;
+			productReference = 69CB9AA92D1AEA5B0093300B /* MobilbahAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		69CB9AB22D1AEA5B0093300B /* MobilbahAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69CB9AC32D1AEA5B0093300B /* Build configuration list for PBXNativeTarget "MobilbahAppUITests" */;
+			buildPhases = (
+				69CB9AAF2D1AEA5B0093300B /* Sources */,
+				69CB9AB02D1AEA5B0093300B /* Frameworks */,
+				69CB9AB12D1AEA5B0093300B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				69CB9AB52D1AEA5B0093300B /* PBXTargetDependency */,
+			);
+			name = MobilbahAppUITests;
+			productName = MobilbahAppUITests;
+			productReference = 69CB9AB32D1AEA5B0093300B /* MobilbahAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		69CB9A912D1AEA5A0093300B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					69CB9A982D1AEA5A0093300B = {
+						CreatedOnToolsVersion = 14.0;
+					};
+					69CB9AA82D1AEA5B0093300B = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = 69CB9A982D1AEA5A0093300B;
+					};
+					69CB9AB22D1AEA5B0093300B = {
+						CreatedOnToolsVersion = 14.0;
+						TestTargetID = 69CB9A982D1AEA5A0093300B;
+					};
+				};
+			};
+			buildConfigurationList = 69CB9A942D1AEA5A0093300B /* Build configuration list for PBXProject "MobilbahApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 69CB9A902D1AEA5A0093300B;
+			productRefGroup = 69CB9A9A2D1AEA5A0093300B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				69CB9A982D1AEA5A0093300B /* MobilbahApp */,
+				69CB9AA82D1AEA5B0093300B /* MobilbahAppTests */,
+				69CB9AB22D1AEA5B0093300B /* MobilbahAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		69CB9A972D1AEA5A0093300B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69CB9AA42D1AEA5B0093300B /* Preview Assets.xcassets in Resources */,
+				69CB9AA12D1AEA5B0093300B /* Assets.xcassets in Resources */,
+				69CB9ACD2D1AEB2B0093300B /* backgroundMusic.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69CB9AA72D1AEA5B0093300B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69CB9AB12D1AEA5B0093300B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		69CB9A952D1AEA5A0093300B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69CB9A9F2D1AEA5A0093300B /* ContentView.swift in Sources */,
+				69CB9ACB2D1AEAF60093300B /* WebView.swift in Sources */,
+				69CB9A9D2D1AEA5A0093300B /* MobilbahAppApp.swift in Sources */,
+				69CB9AC92D1AEAD80093300B /* OrientationManager.swift in Sources */,
+				69CB9AC72D1AEAAE0093300B /* CustomWebView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69CB9AA52D1AEA5B0093300B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69CB9AAE2D1AEA5B0093300B /* MobilbahAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69CB9AAF2D1AEA5B0093300B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69CB9ABA2D1AEA5B0093300B /* MobilbahAppUITestsLaunchTests.swift in Sources */,
+				69CB9AB82D1AEA5B0093300B /* MobilbahAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		69CB9AAB2D1AEA5B0093300B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 69CB9A982D1AEA5A0093300B /* MobilbahApp */;
+			targetProxy = 69CB9AAA2D1AEA5B0093300B /* PBXContainerItemProxy */;
+		};
+		69CB9AB52D1AEA5B0093300B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 69CB9A982D1AEA5A0093300B /* MobilbahApp */;
+			targetProxy = 69CB9AB42D1AEA5B0093300B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		69CB9ABB2D1AEA5B0093300B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		69CB9ABC2D1AEA5B0093300B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		69CB9ABE2D1AEA5B0093300B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MobilbahApp/Preview Content\"";
+				DEVELOPMENT_TEAM = FQ2695S35Q;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Project.MobilbahApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		69CB9ABF2D1AEA5B0093300B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MobilbahApp/Preview Content\"";
+				DEVELOPMENT_TEAM = FQ2695S35Q;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Project.MobilbahApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		69CB9AC12D1AEA5B0093300B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FQ2695S35Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Project.MobilbahAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MobilbahApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MobilbahApp";
+			};
+			name = Debug;
+		};
+		69CB9AC22D1AEA5B0093300B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FQ2695S35Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Project.MobilbahAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MobilbahApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MobilbahApp";
+			};
+			name = Release;
+		};
+		69CB9AC42D1AEA5B0093300B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FQ2695S35Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Project.MobilbahAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MobilbahApp;
+			};
+			name = Debug;
+		};
+		69CB9AC52D1AEA5B0093300B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FQ2695S35Q;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Project.MobilbahAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MobilbahApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		69CB9A942D1AEA5A0093300B /* Build configuration list for PBXProject "MobilbahApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69CB9ABB2D1AEA5B0093300B /* Debug */,
+				69CB9ABC2D1AEA5B0093300B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69CB9ABD2D1AEA5B0093300B /* Build configuration list for PBXNativeTarget "MobilbahApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69CB9ABE2D1AEA5B0093300B /* Debug */,
+				69CB9ABF2D1AEA5B0093300B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69CB9AC02D1AEA5B0093300B /* Build configuration list for PBXNativeTarget "MobilbahAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69CB9AC12D1AEA5B0093300B /* Debug */,
+				69CB9AC22D1AEA5B0093300B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69CB9AC32D1AEA5B0093300B /* Build configuration list for PBXNativeTarget "MobilbahAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69CB9AC42D1AEA5B0093300B /* Debug */,
+				69CB9AC52D1AEA5B0093300B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 69CB9A912D1AEA5A0093300B /* Project object */;
+}
