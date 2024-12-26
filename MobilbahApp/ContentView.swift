@@ -11,7 +11,7 @@ struct ContentView: View {
     @StateObject private var orientationManager = OrientationManager()
     @State private var currentImageIndex = 0
     private let images = ["typeMobile1", "typeMobile2", "typeMobile3"]
-
+    
     var body: some View {
         switch screenState {
         case .menu:
@@ -23,8 +23,8 @@ struct ContentView: View {
                     HStack {
                         VStack(spacing: UIScreen.main.bounds.height * 0.025) {
                             Button {
-                                screenState = .play
                                 stopBackgroundMusic()
+                                screenState = .play
                             } label: {
                                 Image("play")
                                     .resizable()
@@ -78,8 +78,8 @@ struct ContentView: View {
                         .ignoresSafeArea()
                     VStack(spacing: UIScreen.main.bounds.height * 0.025) {
                         Button {
-                            screenState = .play
                             stopBackgroundMusic()
+                            screenState = .play
                         } label: {
                             Image("play")
                                 .resizable()
@@ -166,36 +166,36 @@ struct ContentView: View {
         case .mode:
             ZStack {
                 Image("background")
-                     .resizable()
-                   .ignoresSafeArea()
-               VStack {
-                   HStack {
-                       Button {
-                           screenState = .menu
-                       } label: {
-                           Image(systemName: "chevron.backward")
-                               .resizable()
-                               .scaledToFit()
-                               .frame(width: UIScreen.main.bounds.width * 0.05)
-                               .foregroundStyle(.white)
-                       }
-                       .padding(.leading, 25)
-                       .padding(.top, 25)
-                       Spacer()
-                   }
-                   Spacer()
-                   Button {
-                       isDarkMode.toggle()
-                   } label: {
-                       Image(isDarkMode ? "darkModeOff" : "darkModeOn")
-                           .resizable()
-                           .scaledToFit()
-                   }
-                   .padding()
-                   
-                   Spacer()
-               }
-           }
+                    .resizable()
+                    .ignoresSafeArea()
+                VStack {
+                    HStack {
+                        Button {
+                            screenState = .menu
+                        } label: {
+                            Image(systemName: "chevron.backward")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: UIScreen.main.bounds.width * 0.05)
+                                .foregroundStyle(.white)
+                        }
+                        .padding(.leading, 25)
+                        .padding(.top, 25)
+                        Spacer()
+                    }
+                    Spacer()
+                    Button {
+                        isDarkMode.toggle()
+                    } label: {
+                        Image(isDarkMode ? "darkModeOff" : "darkModeOn")
+                            .resizable()
+                            .scaledToFit()
+                    }
+                    .padding()
+                    
+                    Spacer()
+                }
+            }
         case .play:
             CustomWebView(selectedTexture: images[currentImageIndex], isSoundMuted: $isSoundMuted, currentScreen: $screenState)
         case .policy:
@@ -218,11 +218,11 @@ struct ContentView: View {
             }
         }
     }
-
+    
     private func playBackgroundMusic() {
         backgroundAudioPlayer?.play()
     }
-
+    
     private func stopBackgroundMusic() {
         backgroundAudioPlayer?.stop()
         backgroundAudioPlayer?.currentTime = 0

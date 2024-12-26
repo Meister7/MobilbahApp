@@ -5,19 +5,19 @@ struct CustomWebView: UIViewRepresentable {
     let selectedTexture: String
     @Binding var isSoundMuted: Bool
     @Binding var currentScreen: ScreenState
-
+    
     func makeCoordinator() -> WebViewCoordinator {
         WebViewCoordinator(self)
     }
-
+    
     func makeUIView(context: Context) -> WKWebView {
         let configuration = WKWebViewConfiguration()
         configuration.allowsInlineMediaPlayback = true
-
+        
         if #available(iOS 10.0, *) {
             configuration.mediaTypesRequiringUserActionForPlayback = []
         }
-
+        
         let webView = WKWebView(frame: .zero, configuration: configuration)
         webView.navigationDelegate = context.coordinator
         webView.configuration.userContentController.add(context.coordinator, name: "onButtonClick")
@@ -25,35 +25,48 @@ struct CustomWebView: UIViewRepresentable {
         context.coordinator.webViewReference = webView
         return webView
     }
-
+    
     func updateUIView(_ webView: WKWebView, context: Context) {
-        let baseAddress = "https://mobilbah.onrender.com"
         let textureScript = "window.selectedTexture = '\(selectedTexture)';"
-        webView.evaluateJavaScript(textureScript, completionHandler: nil)
         webView.evaluateJavaScript(textureScript) { result, error in
-                if let error = error {
-                    print("Error setting selectedTexture: \(error)")
-                } else {
-                    print("Successfully set selectedTexture to: \(selectedTexture)")
+            if let error = error {
+                print("Error setting selectedTexture: \(error)")
+            } else {
+                print("Successfully set selectedTexture to: \(selectedTexture)")
+            }
+        }
+        
+        let soundScript = "window.isMuted = \(isSoundMuted ? "true" : "false");"
+        webView.evaluateJavaScript(soundScript) { result, error in
+            if let error = error {
+                print("Error updating mute state: \(error)")
+            } else {
+                print("Successfully updated mute state.")
+            }
+        }
+        
+        //URL с параметром isMuted
+        let baseAddress = "https://mobilbah.onrender.com"
+        let queryString = "\(baseAddress)?isMuted=\(isSoundMuted)"
+        DispatchQueue.global(qos: .background).async {
+            if let url = URL(string: queryString) {
+                let request = URLRequest(url: url)
+                DispatchQueue.main.async {
+                    webView.load(request)
                 }
             }
-        let queryString = "\(baseAddress)?isMuted=\(isSoundMuted)"
-        print("Navigating to URL: \(queryString)")
-        
-        if let url = URL(string: queryString) {
-            webView.load(URLRequest(url: url))
         }
         
     }
-
+    
     class WebViewCoordinator: NSObject, WKScriptMessageHandler, WKNavigationDelegate {
         var parentView: CustomWebView
         weak var webViewReference: WKWebView?
-
+        
         init(_ parentView: CustomWebView) {
             self.parentView = parentView
         }
-
+        
         func userContentController(_ userContentController: WKUserContentController, didReceive message: WKScriptMessage) {
             if message.name == "onButtonClick" {
                 if let body = message.body as? [String: String], let action = body["action"] {
@@ -72,7 +85,7 @@ struct CustomWebView: UIViewRepresentable {
                 }
             }
         }
-
+        
         deinit {
             webViewReference?.configuration.userContentController.removeScriptMessageHandler(forName: "onButtonClick")
         }
