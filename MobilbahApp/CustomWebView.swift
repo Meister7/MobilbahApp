@@ -46,7 +46,7 @@ struct CustomWebView: UIViewRepresentable {
         }
         
         //URL с параметром isMuted
-        let baseAddress = "https://mobilbah.onrender.com"
+        let baseAddress = "https://mobilbah.space"
         let queryString = "\(baseAddress)?isMuted=\(isSoundMuted)"
         DispatchQueue.global(qos: .background).async {
             if let url = URL(string: queryString) {

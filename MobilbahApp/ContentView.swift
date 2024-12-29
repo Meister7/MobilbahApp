@@ -199,7 +199,7 @@ struct ContentView: View {
         case .play:
             CustomWebView(selectedTexture: images[currentImageIndex], isSoundMuted: $isSoundMuted, currentScreen: $screenState)
         case .policy:
-            WebView(urlString: "https://google.com")
+            WebView(urlString: "https://www.freeprivacypolicy.com/live/ef5c1697-4bc2-48c1-bd72-0802f2e03908")
         case .typeMobile:
             CustomWebView(selectedTexture: images[currentImageIndex], isSoundMuted: $isSoundMuted, currentScreen: $screenState)
         }
