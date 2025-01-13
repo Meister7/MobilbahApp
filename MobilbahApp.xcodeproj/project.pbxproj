@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		691AEFC82D350BCC00933C63 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 691AEFC72D350BCC00933C63 /* Assets.xcassets */; };
 		69CB9A9D2D1AEA5A0093300B /* MobilbahAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CB9A9C2D1AEA5A0093300B /* MobilbahAppApp.swift */; };
 		69CB9A9F2D1AEA5A0093300B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CB9A9E2D1AEA5A0093300B /* ContentView.swift */; };
-		69CB9AA12D1AEA5B0093300B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69CB9AA02D1AEA5B0093300B /* Assets.xcassets */; };
 		69CB9AA42D1AEA5B0093300B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69CB9AA32D1AEA5B0093300B /* Preview Assets.xcassets */; };
 		69CB9AAE2D1AEA5B0093300B /* MobilbahAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CB9AAD2D1AEA5B0093300B /* MobilbahAppTests.swift */; };
 		69CB9AB82D1AEA5B0093300B /* MobilbahAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CB9AB72D1AEA5B0093300B /* MobilbahAppUITests.swift */; };
@@ -38,10 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		691AEFC72D350BCC00933C63 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		69CB9A992D1AEA5A0093300B /* MobilbahApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobilbahApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69CB9A9C2D1AEA5A0093300B /* MobilbahAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobilbahAppApp.swift; sourceTree = "<group>"; };
 		69CB9A9E2D1AEA5A0093300B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		69CB9AA02D1AEA5B0093300B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		69CB9AA32D1AEA5B0093300B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		69CB9AA92D1AEA5B0093300B /* MobilbahAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MobilbahAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		69CB9AAD2D1AEA5B0093300B /* MobilbahAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MobilbahAppTests.swift; sourceTree = "<group>"; };
@@ -102,13 +102,13 @@
 		69CB9A9B2D1AEA5A0093300B /* MobilbahApp */ = {
 			isa = PBXGroup;
 			children = (
+				691AEFC72D350BCC00933C63 /* Assets.xcassets */,
 				69CB9ACC2D1AEB2B0093300B /* backgroundMusic.mp3 */,
 				69CB9A9C2D1AEA5A0093300B /* MobilbahAppApp.swift */,
 				69CB9A9E2D1AEA5A0093300B /* ContentView.swift */,
 				69CB9AC62D1AEAAE0093300B /* CustomWebView.swift */,
 				69CB9AC82D1AEAD80093300B /* OrientationManager.swift */,
 				69CB9ACA2D1AEAF60093300B /* WebView.swift */,
-				69CB9AA02D1AEA5B0093300B /* Assets.xcassets */,
 				69CB9AA22D1AEA5B0093300B /* Preview Content */,
 			);
 			path = MobilbahApp;
@@ -244,7 +244,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				69CB9AA42D1AEA5B0093300B /* Preview Assets.xcassets in Resources */,
-				69CB9AA12D1AEA5B0093300B /* Assets.xcassets in Resources */,
+				691AEFC82D350BCC00933C63 /* Assets.xcassets in Resources */,
 				69CB9ACD2D1AEB2B0093300B /* backgroundMusic.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

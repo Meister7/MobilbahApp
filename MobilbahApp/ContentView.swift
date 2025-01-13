@@ -10,7 +10,7 @@ struct ContentView: View {
     @State private var isDarkMode = true
     @StateObject private var orientationManager = OrientationManager()
     @State private var currentImageIndex = 0
-    private let images = ["typeMobile1", "typeMobile2", "typeMobile3"]
+    private let images = ["selectMobile1", "selectMobile2", "selectMobile3"]
     
     var body: some View {
         switch screenState {
@@ -22,6 +22,10 @@ struct ContentView: View {
                         .ignoresSafeArea()
                     HStack {
                         VStack(spacing: UIScreen.main.bounds.height * 0.025) {
+                            Image("icon")
+                                .resizable()
+                                .scaledToFit()
+                                .frame(width: UIScreen.main.bounds.height * 0.3)
                             Button {
                                 stopBackgroundMusic()
                                 screenState = .play
@@ -64,7 +68,7 @@ struct ContentView: View {
                             Image(images[currentImageIndex])
                                 .resizable()
                                 .scaledToFit()
-                                .frame(width: UIScreen.main.bounds.width * 0.55)
+                                .frame(width: UIScreen.main.bounds.width * 0.4)
                         }
                         .padding(.top, UIScreen.main.bounds.height * 0.08)
                         
@@ -77,6 +81,10 @@ struct ContentView: View {
                         .resizable()
                         .ignoresSafeArea()
                     VStack(spacing: UIScreen.main.bounds.height * 0.025) {
+                        Image("icon")
+                            .resizable()
+                            .scaledToFit()
+                            .frame(width: UIScreen.main.bounds.height * 0.2)
                         Button {
                             stopBackgroundMusic()
                             screenState = .play
@@ -143,7 +151,7 @@ struct ContentView: View {
                                 .resizable()
                                 .scaledToFit()
                                 .frame(width: UIScreen.main.bounds.width * 0.05)
-                                .foregroundStyle(.white)
+                                .foregroundStyle(.black)
                         }
                         .padding(.leading, 25)
                         .padding(.top, 25)
@@ -177,7 +185,7 @@ struct ContentView: View {
                                 .resizable()
                                 .scaledToFit()
                                 .frame(width: UIScreen.main.bounds.width * 0.05)
-                                .foregroundStyle(.white)
+                                .foregroundStyle(.black)
                         }
                         .padding(.leading, 25)
                         .padding(.top, 25)
@@ -208,7 +216,7 @@ struct ContentView: View {
                             .resizable()
                             .scaledToFit()
                             .frame(width: UIScreen.main.bounds.width * 0.05)
-                            .foregroundStyle(.white)
+                            .foregroundStyle(.black)
                     }
                     .padding(.leading, 25)
                     .padding(.top, 25)
